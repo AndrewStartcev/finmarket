@@ -1,0 +1,37 @@
+.marquee {
+	overflow: hidden;
+	background: $black;
+	color: $gold;
+	display: flex;
+	padding: 40px 0;
+	height: 13vh;
+}
+
+.marquee h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 100px;
+	white-space: nowrap;
+	text-transform: uppercase;
+	margin-right: 100px;
+}
+
+@include media-tablet {
+	.marquee {
+		padding: 20px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.marquee h2 {
+		font-size: 16px;
+		gap: 30px;
+		margin-right: 30px;
+	}
+}

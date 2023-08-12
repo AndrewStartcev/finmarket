@@ -1,0 +1,26 @@
+.btn {
+	color: $gold;
+	font-size: 16px;
+	background: transparent;
+	font-family: 'Manrope', Arial, sans-serif;
+	line-height: 1.55;
+	font-weight: 400;
+	border-width: 1px;
+	border-radius: 30px;
+	background-position: center center;
+	border-color: $gold;
+	padding: 18px 40px;
+	border-style: solid;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	&:hover {
+		background-color: $gold;
+		color: $white;
+	}
+}
+
+@include media-mobile-horizontal {
+	.btn {
+		font-size: 14px;
+		padding: 12px 20px;
+	}
+}
