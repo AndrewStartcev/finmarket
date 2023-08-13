@@ -1,7 +1,7 @@
-.features {
+.help-you {
 	padding: 100px 0;
 	&__title {
-		width: 70%;
+		width: 80%;
 		font-size: 56px;
 		font-weight: 300;
 		text-align: left;
@@ -27,28 +27,24 @@
 		border-radius: 25px;
 		border: 1px solid $gold;
 		background: $dark;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 20px;
 		p {
 			line-height: 1.5;
 			opacity: 0.8;
 		}
 	}
 
-	&__number {
+	&__icon {
 		width: 50px;
 		height: 50px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 100%;
-		border: 1px solid $gold;
-		text-align: center;
-		font-weight: bold;
-		color: $gold;
 	}
 }
 
 @include media-tablet {
-	.features {
+	.help-you {
 		padding: 60px 0;
 		&__title {
 			width: 100%;
@@ -88,7 +84,7 @@
 }
 
 @include media-mobile-horizontal {
-	.features {
+	.help-you {
 		padding: 25px 0;
 		&__title {
 			font-size: 25px;
@@ -101,16 +97,16 @@
 
 		&__item {
 			flex: 0 0 100%;
-			padding: 10px 15px;
+			padding: 5px 15px;
 			border-radius: 16px;
 			p {
 				font-size: 14px;
 			}
 		}
 
-		&__number {
-			width: 40px;
-			height: 40px;
+		&__icon {
+			width: 30px;
+			height: 30px;
 		}
 	}
 }
