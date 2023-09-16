@@ -13,7 +13,7 @@
 	z-index: 9999;
 	&::before {
 		content: '';
-		background: rgba(#000000, 0.2);
+		background: rgba(16, 12, 12, 0.6);
 		position: fixed;
 		width: 100%;
 		height: 100%;
@@ -46,8 +46,8 @@
 	}
 
 	&__body {
-		max-width: 830px;
-		padding: 80px;
+		max-width: 380px;
+		padding: 50px 40px;
 		width: 100%;
 		transform: scale(0);
 		position: relative;
@@ -56,16 +56,19 @@
 		justify-content: center;
 		align-items: center;
 		transition: all 0.5s ease 0s;
-		border-radius: 32px;
-		background: #ffffff;
+		background: #19171a;
+		border-radius: 10px;
+		@include media-mobile-horizontal {
+			padding: 30px 15px;
+		}
 	}
 
 	&__close {
-		width: 54px;
-		height: 54px;
+		width: 35px;
+		height: 35px;
 		position: absolute;
-		top: 20px;
-		right: 20px;
+		top: 5px;
+		right: 5px;
 		cursor: pointer;
 		z-index: 30;
 		background: transparent;
@@ -73,9 +76,9 @@
 		&::before {
 			content: '';
 			display: block;
-			width: 31px;
-			height: 1px;
-			background: #07170d;
+			width: 20px;
+			height: 3px;
+			background: #e4a90f;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -91,32 +94,72 @@
 		&:focus-visible {
 			&::after,
 			&::before {
-				background: $green;
+				background: #e4a90f;
 			}
 		}
 	}
 	&__title {
 		margin: 0;
 		padding: 0;
-		font-weight: 600;
-		font-size: 54px;
-		line-height: 100%;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 15px;
 		text-align: center;
 	}
 	&__text {
-		max-width: 430px;
 		margin: 0 auto;
 		padding: 0;
 		font-weight: 400;
-		font-size: 18px;
-		line-height: 130%;
+		font-size: 12px;
+		line-height: 18px;
 		text-align: center;
-		opacity: 0.5;
-		margin-top: 30px;
 	}
 	&__form {
-		max-width: 410px;
 		margin: 0 auto;
-		margin-top: 50px;
+		margin-top: 20px;
+		.form {
+			input {
+				width: 100%;
+				border-radius: 0;
+				background: transparent;
+				border: none;
+				box-shadow: none;
+				color: $white;
+				border-bottom: 1px solid $gold;
+				padding: 20px 10px;
+				&::placeholder {
+					color: rgba($white, 0.5);
+				}
+			}
+			.btn {
+				width: 100%;
+				margin-top: 20px;
+				margin-bottom: 30px;
+			}
+			p {
+				width: 80%;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 18px;
+				color: #fff;
+				a {
+					color: #ffb51e;
+				}
+			}
+		}
+	}
+	&-close {
+		padding: 10px 25px;
+		width: 80%;
+		font-size: 16px;
+		margin-top: 20px;
+		font-weight: bold;
 	}
 }

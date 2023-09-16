@@ -1,34 +1,36 @@
-<!-- Задать вопрос -->
-<div class="popup" id="questionPopup">
+<div class="popup" id="orderPopup">
   <div class="popup__content">
     <div class="popup__body">
       <button class="popup__close"></button>
-      <h2 class="popup__title">Задать вопрос</h2>
-      <div class="popup__form form">
-        <form action="#">
-          <div class="form__content">
-            <div class="form__item">
-              <label for="user-email">Эл. почта*</label>
-              <input type="email" name="user-email" placeholder="@" required="required" />
-            </div>
-            <div class="form__item">
-              <label for="user-email">Вопрос</label>
-              <textarea name="user-text" placeholder="Задайте свой вопрос"></textarea>
-            </div>
-            <label class="checkbox">
-              <input type="checkbox" value="Подтверждаю, что прочитал и соглашаюсь с правовыми
-                документами">
-              <span class="checkbox-custom">
-                <span class="checkbox-icon"></span>
-              </span>
-              <span class="text">Подтверждаю, что прочитал и соглашаюсь с правовыми
-                документами</span>
-            </label>
-            <button class="btn form__submit">Отправить</button>
-          </div>
-        </form>
+      <h2 class="popup__title">Заказать звонок</h2>
+      <p class="popup__text">Оставьте свои данные, и наш менеджер проконсультирует вас по всем вопросам</p>
+      <div class="popup__form">
+        <div class="form">
+          <form action="">
+            <input type="text" name="user_name" placeholder="Введите имя" required>
+            <input type="tel" name="user_tel" placeholder="Введите телефон" inputmode="numeric">
+            <input type="email" name="user_email" placeholder="Введите Email">
+            <button type="submit" class="btn">Заказать звонок</button>
+          </form>
+          <p>Нажимая на кнопку «Заказать звонок», вы принимаете <a href="#">условия обработки персональных данных</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<!-- /.Задать вопрос -->
+<!-- = Заказать звонок -->
+
+<div class="popup" id="tanksPopup">
+  <div class="popup__content">
+    <div class="popup__body">
+      <button class="popup__close"></button>
+      <h2 class="popup__title">Спасибо за вашу заявку!</h2>
+      <p class="popup__text">Наш менеджер свяжется с вами в кратчайшие сроки, чтобы обсудить детали и ответить на ваши
+        вопросы</p>
+      <button class="btn popup-close">Закрыть окно</button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- = Успешная отправка -->
